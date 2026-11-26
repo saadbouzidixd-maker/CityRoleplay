@@ -1,0 +1,61 @@
+name: CityRoleplay
+version: '1.0.0'
+main: dev.cityroleplay.CityRoleplay
+api-version: '1.21'
+folia-supported: false
+description: Police, criminal, prison, robbery, duty-zone and economy systems for city roleplay.
+authors: [CityRoleplay]
+softdepend: [Vault, LuckPerms, Essentials]
+
+commands:
+  police:
+    description: Opens the police dashboard.
+    usage: /police [shop|stats|activity]
+  cityadmin:
+    description: CityRoleplay administration.
+    aliases: [ca]
+    usage: /cityadmin
+    permission: city.admin
+  sell:
+    description: Opens the selling menu.
+    usage: /sell
+  arrest:
+    description: Arrest and escort controls for police officers.
+    usage: /arrest <jail|release|escort|stop>
+
+permissions:
+  city.admin:
+    description: Full CityRoleplay administration.
+    default: op
+    children:
+      city.police: true
+      city.sell: true
+      city.robbery: true
+      city.arrest: true
+  city.police:
+    description: Access to the police dashboard and police tools.
+    default: false
+  city.sell:
+    description: Access to the selling menu.
+    default: true
+  city.robbery:
+    description: Allows starting a robbery.
+    default: true
+  city.arrest:
+    description: Allows using arrest tools.
+    default: false
+  city.tools.grave:
+    description: Allows buying and using the grave shovel.
+    default: false
+  city.tools.brush:
+    description: Allows buying and using the investigation brush.
+    default: false
+  city.tools.rope:
+    description: Allows buying and using the arrest rope.
+    default: false
+  city.tools.crossbow:
+    description: Allows buying and using the police crossbow.
+    default: false
+  city.tools.baton:
+    description: Allows buying and using the arrest baton.
+    default: false

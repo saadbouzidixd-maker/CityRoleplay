@@ -1,0 +1,8 @@
+target/
+.idea/
+*.iml
+.vscode/
+*.db
+*.db-wal
+*.db-shm
+*.log

@@ -1,0 +1,11 @@
+# Soft integrations. None are required; missing plugins are logged and degraded safely.
+vault:
+  enabled: true
+luckperms:
+  enabled: true
+essentials:
+  # Do not register /eco when EssentialsX already owns it.
+  respect-existing-eco-command: true
+arrest-rope:
+  # native: built-in escort behavior. External plugin adapters are developer extensions.
+  adapter: native

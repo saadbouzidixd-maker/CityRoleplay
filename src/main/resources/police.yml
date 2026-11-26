@@ -1,0 +1,46 @@
+# Police system settings.
+police:
+  # LuckPerms group used to identify officers.
+  group: POLICE
+  # When LuckPerms is unavailable, the city.police permission is used instead.
+  permission-fallback: city.police
+  # Automatically record the date an officer first went on duty.
+  record-joining-date: true
+  # Reward for a valid police kill of a criminal.
+  kill-reward: 250.0
+  # Reward for completing an arrest and delivering the prisoner.
+  arrest-reward: 400.0
+  # Fine charged to an officer who hits a citizen with the baton.
+  citizen-fine: 150.0
+  # Cooldown in seconds before the same officer can be fined for the same citizen again.
+  citizen-fine-cooldown-seconds: 30
+  # Prevent a police kill from rewarding twice for one death.
+  kill-reward-cooldown-seconds: 10
+
+duty:
+  # Default values used when creating zones through the admin menu.
+  default-reward: 50.0
+  default-interval-seconds: 300
+  # A player must move at least this many blocks within the timeout to be paid.
+  require-movement: true
+  movement-timeout-seconds: 90
+  # Minimum distance in blocks that counts as movement.
+  movement-threshold: 0.5
+  # Save accumulated duty time to SQLite at this interval.
+  save-interval-seconds: 30
+  # Action bar countdown updates.
+  show-countdown: true
+
+arrest:
+  # Maximum duration of an arrest before automatic release, in seconds.
+  max-seconds: 300
+  # Maximum distance between officer and prisoner for /arrest jail.
+  jail-distance: 10
+  # Clear criminal status when a sentence ends.
+  clear-criminal-on-release: true
+  # Remove the arrest if the prisoner disconnects.
+  clear-on-quit: true
+  # Items and actions blocked while arrested.
+  block-commands: true
+  block-interaction: true
+  block-damage: true

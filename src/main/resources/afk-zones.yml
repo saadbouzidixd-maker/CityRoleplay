@@ -1,0 +1,16 @@
+# Police-only paid duty zones. Create and edit these in-game with
+# /cityadmin wand and /cityadmin zones.
+#
+# zones:
+#   police-station:
+#     display-name: "Police Station"
+#     world: world
+#     min: {x: 100, y: 60, z: 100}
+#     max: {x: 130, y: 80, z: 130}
+#     reward: 50.0
+#     interval-seconds: 300
+#     permission: ""
+#     group: ""
+#     enabled: true
+#     require-movement: true
+zones: {}

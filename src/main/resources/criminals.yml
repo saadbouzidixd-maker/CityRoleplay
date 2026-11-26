@@ -1,0 +1,17 @@
+# Criminal status and witness rules.
+criminals:
+  # Radius in blocks in which players witness a kill or robbery.
+  witness-radius: 24
+  # A witnessed player kill makes the killer a criminal.
+  criminal-on-witnessed-kill: true
+  # A completed robbery makes the robber a criminal.
+  criminal-on-robbery: true
+  # How long a criminal remains wanted, in minutes. 0 means no expiry.
+  wanted-minutes: 120
+  # Notify witnesses with a private message.
+  notify-witnesses: true
+  # Broadcast criminal status publicly. Keep false for roleplay privacy.
+  public-broadcast: false
+  # Reward paid to a criminal for a completed robbery is configured per zone.
+  # Clear criminal status when a prison sentence ends (also in police.yml).
+  clear-on-prison-release: true

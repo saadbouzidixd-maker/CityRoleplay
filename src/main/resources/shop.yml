@@ -1,0 +1,9 @@
+# Police shop presentation. Tool definitions live in tools.yml.
+shop:
+  title: "&8POLICE SHOP"
+  rows: 6
+  # Require a confirmation screen before every purchase.
+  require-confirmation: true
+  # Refund a purchase automatically when the tool cannot be given.
+  refund-on-delivery-failure: true
+  # Soulbound drop prevention is configured per tool in tools.yml.

@@ -1,0 +1,35 @@
+# Robbery capture settings. Zones are managed in-game and written below.
+robbery:
+  default-duration-seconds: 300
+  default-reward: 500.0
+  default-cooldown-seconds: 1800
+  # Cancel and reset progress when the robber leaves the zone.
+  reset-on-leave: true
+  # Cancel when the player has not moved for this many seconds.
+  afk-timeout-seconds: 60
+  # Send police officers a private alert when a robbery starts.
+  notify-police: true
+  # Block robberies while at least one police officer is on duty.
+  block-while-police-on-duty: false
+  # Global minimum online players required.
+  min-online-players: 1
+  # Default maximum simultaneous robbers per location.
+  max-robbers: 1
+  # Boss bar update interval in ticks.
+  update-interval-ticks: 20
+
+# Example:
+# zones:
+#   supermarket:
+#     display-name: "Supermarket"
+#     world: world
+#     min: {x: 10, y: 60, z: 10}
+#     max: {x: 20, y: 70, z: 20}
+#     duration-seconds: 300
+#     reward: 500.0
+#     cooldown-seconds: 1800
+#     enabled: true
+#     min-online-players: 1
+#     max-robbers: 1
+#     police-notify: true
+zones: {}

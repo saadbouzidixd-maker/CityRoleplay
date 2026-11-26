@@ -1,0 +1,15 @@
+# Economy settings.
+economy:
+  # Preferred provider: vault, internal, or auto (Vault first, internal fallback).
+  provider: auto
+  # Decimal precision used for all transactions.
+  precision: 2
+  # Starting balance for the internal economy only.
+  starting-balance: 1000.0
+  # Log every transaction to SQLite.
+  log-transactions: true
+  # Maximum single transaction, protecting against accidental overflow.
+  max-transaction: 100000000.0
+  currency-symbol: "$"
+  # Internal economy balance save interval in seconds.
+  save-interval-seconds: 60

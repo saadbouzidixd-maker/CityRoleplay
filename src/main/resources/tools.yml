@@ -1,0 +1,90 @@
+# Dynamic police tool registry.
+#
+# Every tool has a real behavior implementation. Administrators can add, remove,
+# disable, reprice and restyle tools in-game through /cityadmin tools.
+# Supported behaviors:
+#   grave_shovel, investigation_brush, arrest_rope, crossbow, arrest_baton
+tools:
+  grave-shovel:
+    enabled: true
+    behavior: grave_shovel
+    material: IRON_SHOVEL
+    name: "&eGrave Shovel"
+    lore:
+      - "&7Hides a registered grave marker."
+      - "&7One reward per grave."
+    price: 750.0
+    permission: city.tools.grave
+    purchase-limit: 1
+    slot: 11
+    glow: true
+    soulbound: true
+    config:
+      reward: 100.0
+      hide-material: AIR
+  investigation-brush:
+    enabled: true
+    behavior: investigation_brush
+    material: BRUSH
+    name: "&bInvestigation Brush"
+    lore:
+      - "&7Right-click a player to inspect"
+      - "&7their identity and criminal status."
+    price: 500.0
+    permission: city.tools.brush
+    purchase-limit: 1
+    slot: 13
+    glow: true
+    soulbound: true
+  arrest-rope:
+    enabled: true
+    behavior: arrest_rope
+    material: LEAD
+    name: "&6Arrest Rope"
+    lore:
+      - "&7Right-click an arrested player"
+      - "&7to start or stop escorting them."
+    price: 650.0
+    permission: city.tools.rope
+    purchase-limit: 1
+    slot: 15
+    glow: true
+    soulbound: true
+    config:
+      # native is the built-in escort adapter. External adapters can be added
+      # by developers through ArrestRopeAdapter.
+      adapter: native
+  police-crossbow:
+    enabled: true
+    behavior: crossbow
+    material: CROSSBOW
+    name: "&cPolice Crossbow"
+    lore:
+      - "&7Fires police-marked bolts."
+      - "&7Requires arrows in the inventory."
+    price: 900.0
+    permission: city.tools.crossbow
+    purchase-limit: 1
+    slot: 29
+    glow: true
+    soulbound: true
+    config:
+      ammo-material: ARROW
+      slow-ticks: 60
+      slow-amplifier: 1
+      police-only: true
+  arrest-baton:
+    enabled: true
+    behavior: arrest_baton
+    material: STICK
+    name: "&cArrest Baton"
+    lore:
+      - "&7Hit a criminal to arrest them."
+      - "&7Hitting a citizen fines you."
+      - "&7Right-click while escorting."
+    price: 800.0
+    permission: city.tools.baton
+    purchase-limit: 1
+    slot: 31
+    glow: true
+    soulbound: true

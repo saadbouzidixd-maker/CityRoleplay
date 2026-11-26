@@ -1,0 +1,77 @@
+# Player selling menu.
+sell:
+  enabled: true
+  title: "&8SELL ITEMS"
+  rows: 6
+  # If whitelist is non-empty, only those materials may be sold.
+  whitelist: []
+  blacklist:
+    - BEDROCK
+    - BARRIER
+    - COMMAND_BLOCK
+    - CHAIN_COMMAND_BLOCK
+    - REPEATING_COMMAND_BLOCK
+    - STRUCTURE_BLOCK
+    - STRUCTURE_VOID
+    - JIGSAW
+    - LIGHT
+    - SPAWNER
+    - TRIAL_SPAWNER
+    - VAULT
+  # Price per single item.
+  prices:
+    COBBLESTONE: 1.0
+    STONE: 1.2
+    DEEPSLATE: 1.5
+    DIRT: 0.5
+    GRASS_BLOCK: 0.8
+    SAND: 0.8
+    GRAVEL: 0.7
+    OAK_LOG: 2.0
+    SPRUCE_LOG: 2.0
+    BIRCH_LOG: 2.0
+    OAK_PLANKS: 1.0
+    SPRUCE_PLANKS: 1.0
+    BIRCH_PLANKS: 1.0
+    COAL: 4.0
+    RAW_IRON: 6.0
+    IRON_INGOT: 9.0
+    RAW_GOLD: 8.0
+    GOLD_INGOT: 12.0
+    DIAMOND: 40.0
+    EMERALD: 35.0
+    LAPIS_LAZULI: 5.0
+    REDSTONE: 3.0
+    QUARTZ: 6.0
+    NETHERITE_SCRAP: 120.0
+    NETHERITE_INGOT: 500.0
+    WHEAT: 1.5
+    CARROT: 1.5
+    POTATO: 1.5
+    BEETROOT: 1.5
+    SUGAR_CANE: 1.0
+    MELON_SLICE: 0.8
+    PUMPKIN: 1.2
+    LEATHER: 4.0
+    STRING: 2.0
+    FEATHER: 1.5
+    BONE: 2.0
+    GUNPOWDER: 4.0
+    SLIME_BALL: 3.0
+    ARROW: 0.5
+    PAPER: 1.0
+    BOOK: 3.0
+    CLAY_BALL: 1.2
+    BRICK: 2.0
+    GLASS: 1.0
+    SANDSTONE: 1.0
+    OBSIDIAN: 8.0
+    GLOWSTONE: 4.0
+    NETHERRACK: 0.4
+    FLINT: 1.5
+    TORCH: 0.8
+  # Optional custom-model-data pricing. Checked before the material price.
+  custom-prices:
+    - material: DIAMOND_SWORD
+      custom-model-data: 1001
+      price: 250.0

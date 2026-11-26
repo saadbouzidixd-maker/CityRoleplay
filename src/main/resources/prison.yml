@@ -1,0 +1,24 @@
+# Prison and sentence settings.
+prison:
+  # Sentence for a police kill of a criminal.
+  death-sentence-minutes: 10
+  # Sentence after a completed baton arrest.
+  arrest-sentence-minutes: 15
+  # Minimum and maximum sentences accepted from administration.
+  min-sentence-minutes: 1
+  max-sentence-minutes: 1440
+  # Executed as console. %player% is replaced with a validated player name.
+  # No other placeholders are substituted, preventing command injection.
+  jail-command: "warp prison %player%"
+  # Executed as console when a sentence ends. Leave blank to teleport to the
+  # world spawn instead.
+  release-command: ""
+  # Fallback release location when release-command is blank.
+  release-world: ""
+  # Check the release timer every N ticks.
+  check-interval-ticks: 100
+  # Send the prisoner back to prison when they reconnect with time remaining.
+  enforce-on-join: true
+  # Notify the prisoner of the remaining sentence on join.
+  notify-on-join: true
+  # Escape mechanics are not implemented; sentences always persist until release.

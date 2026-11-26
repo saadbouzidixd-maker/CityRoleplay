@@ -1,0 +1,11 @@
+# CityRoleplay - general settings
+# All timestamps are stored in UTC milliseconds; display uses the timezone below.
+server-name: "City Roleplay"
+timezone: "UTC"
+debug: false
+
+# How often dirty player data is flushed to SQLite.
+save-interval-seconds: 60
+
+# Number of recent transactions shown in activity menus.
+activity-history-size: 15
